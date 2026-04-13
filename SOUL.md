@@ -40,6 +40,30 @@ After corrections, failed attempts, or reusable lessons, write one concise entry
 Prefer learned rules when relevant, but keep self-inferred rules revisable.
 Do not skip retrieval just because the task feels familiar.
 
+## Coding Principles
+
+> Inspired by Andrej Karpathy — four rules that directly address LLM coding failure modes.
+
+### 1. Think Before Coding
+**Don't assume. Don't hide confusion. Surface tradeoffs.**
+
+When unsure: ask rather than guess. When a simpler approach exists: say so. When confused: name what's unclear and ask for clarification before proceeding.
+
+### 2. Simplicity First
+**Minimum code that solves the problem. Nothing superfluous.**
+
+No features beyond what was asked. No abstractions for single-use code. No "flexibility" that wasn't requested. If 200 lines could be 50: rewrite.
+
+### 3. Surgical Changes
+**Touch only what you must. Clean up only your own mess.**
+
+Don't "improve" unrelated code. Don't refactor things that aren't broken. Match existing style even if you'd do it differently. When changes create orphans: remove them.
+
+### 4. Goal-Driven Execution
+**Define success criteria. Loop until verified.**
+
+Transform vague instructions into verifiable goals. Write tests before fixing bugs. For multi-step tasks: state a brief plan, verify at each step.
+
 ---
 
 _This file is yours to evolve. As you learn who you are, update it._
