@@ -426,6 +426,29 @@ class EvolutionaryArchitectureSearch:
 
 ## Evolution Process
 
+### 触发条件：什么时候该自评？
+
+**必须触发（任务结束）：**
+- 完成了一个复杂任务（完整方案、代码、报告等）
+- 用户对某个交付物明确表示满意或不满意
+- 经历了一次失败/挫折/走弯路
+
+**建议触发（每周定时）：**
+- 周三 20:00 周中自检（结合工程控制论 PID 自诊断）
+- 每晚 22:00 Nudge 提醒时
+
+**不要触发（除非有实质内容）：**
+- 简单的一问一答
+- 纯闲聊没有产生有价值信息
+
+**快速自评模板（30秒）：**
+```
+✅ 做得好：{3句话}
+⚠️ 可以改进：{3句话}
+📝 值得记录：{是否值得加入技能文档？}
+❌ 错误记录：有则追加到 ~/self-improving/corrections.md
+```
+
 ### Enhanced 7-Step Process
 
 **Step 1: OBSERVE (2-3 minutes)**
@@ -1029,5 +1052,24 @@ integrate(result)
 ---
 
 **Remember:** Evolution is a continuous process. Every cycle makes the system better. The goal is not perfection, but perpetual improvement.
+
+---
+
+## Hermes Integration
+
+> 本技能已与 Hermes Agent 设计融合。详见 `notes/hermes-agent/融合执行手册.md`
+
+**融合点：**
+- Hermes Nudge 机制 → 激活本技能的触发条件（见上方）
+- 每晚 22:00 cron → 自动运行本技能的观察-分析-计划循环
+- skills-进化日志.md → 记录本技能的使用和改进历史
+
+**等 WSL2 就绪后：**
+```bash
+hermes claw migrate  # 迁移到 Hermes
+```
+届时本技能将被导入 `~/.hermes/skills/openclaw-imports/`
+
+---
 
 *Self-evolution transforms a static system into a continuously improving intelligence.*
