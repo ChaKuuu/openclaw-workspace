@@ -15,7 +15,17 @@ User corrects you or points out mistakes. You complete significant work and want
 ## Architecture
 
 Memory lives in `~/self-improving/` with tiered structure. If `~/self-improving/` does not exist, run `setup.md`.
-Workspace setup should add the standard self-improving steering to the workspace AGENTS, SOUL, and `HEARTBEAT.md` files, with recurring maintenance routed through `heartbeat-rules.md`.
+Workspace setup should add the standard self-improving steering to the workspace AGENTS, SOUL, and `HEARTBEED.md` files, with recurring maintenance routed through `heartbeat-rules.md`.
+
+### 三层搜索架构（claude-mem 风格）
+
+```
+Layer 1: index.md       ← grep快速定位（ID | DATE | TYPE | TAGS | SUMMARY）
+Layer 2: timeline/      ← 按时间线查看上下文
+Layer 3: entries/      ← 每个ID的完整记录
+```
+
+详见 `~/self-improving/操作手册.md`
 
 ```
 ~/self-improving/

@@ -1,5 +1,7 @@
 # Memory Operations
 
+> 📌 新增三层架构，详见 `~/self-improving/操作手册.md`
+
 ## User Commands
 
 | Command | Action |
