@@ -30,9 +30,10 @@
 - 这次对话用户透露了什么新信息？
 - USER.md 需要更新吗？
 
-### 第6个心跳：自我改进
+### 第6个心跳：自我改进（三层记忆系统）
 - 今天有没有新的 corrections 要记录？
 - 有没有发现技能可以改进的地方？
+- 用三层系统查询：`grep index.md` → `timeline/` → `entries/`
 
 ---
 
@@ -45,6 +46,24 @@
 3. **用户提供了新的项目/任务信息** → 提醒"更新 USER.md"
 4. **能量函数 V(x) 连续上升** → 提醒"Bang-Bang 急停"
 5. **有技能使用后效果不好** → 提醒"技能自评"
+
+---
+
+## 三层记忆系统触发
+
+> 每当发生以下情况时，立即走三层流程记录：
+
+**触发条件：**
+- 遇到错误/失败 → Layer 3 写 `corr-YYYYMMDD-NNN.md`
+- 用户纠正 → Layer 3 写 `corr-YYYYMMDD-NNN.md`
+- 发现改进点 → Layer 3 写 `impr-YYYYMMDD-NNN.md`
+- 用户透露偏好 → Layer 3 写 `pref-YYYYMMDD-NNN.md`
+- 每周三 20:00 → 运行 `~/self-improving/维护脚本.md`
+
+**记录后必须同步：**
+1. Layer 3 写入完整内容
+2. Layer 1 更新 index.md（一行）
+3. Layer 2 更新 `timeline/YYYY-MM.md`
 
 ---
 

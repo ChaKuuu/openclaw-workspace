@@ -31,6 +31,15 @@ Only do conservative organization:
 - preserve confirmed rules and explicit corrections exactly
 - update `last_reviewed_change_at` only after the review finishes cleanly
 
+## 三层记忆系统（Layer 1/2/3）
+
+每次自评后必须同步三层：
+1. Layer 3（entries/*.md）— 写完整记录
+2. Layer 1（index.md）— 追加一行索引
+3. Layer 2（timeline/YYYY-MM.md）— 追加一行引用
+
+详见 `~/self-improving/操作手册.md`
+
 ## Safety Rules
 
 - Most heartbeat runs should do nothing
